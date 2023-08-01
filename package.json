@@ -1,0 +1,20 @@
+{
+  "name": "madscape-v2",
+  "version": "0.0.1",
+  "description": "madscape monorepo",
+  "main": "index.js",
+  "repository": "https://github.com/MadscapeLabs/madscape-v2.git",
+  "author": "@mjavala",
+  "license": "MIT",
+  "private": true,
+  "workspaces": [
+    "packages/app",
+    "packages/contracts"
+  ],
+  "scripts": {
+    "app:dev": "yarn workspace app dev",
+    "app:build": "yarn workspace app build",
+    "c:compile": "yarn workspace contracts compile",
+    "c:test": "yarn workspace contracts test"
+  }
+}
